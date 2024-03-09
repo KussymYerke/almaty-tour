@@ -20,7 +20,7 @@ const PopularToursTwo = ({ toursPage = false }) => {
         <Row>
           <h1 className="tour-title">Individual tours</h1>
 
-          {popularTours.map((tour) => (
+          {popularTours.slice(0, 7).map((tour) => (
             <Col
               key={tour.id}
               xl={4}
