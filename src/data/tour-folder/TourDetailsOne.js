@@ -7,6 +7,8 @@ const { title, rate, duration, minAge, tourType, location, date, superb } =
   tourDetailsOne;
 
 const TourDetailsOne = ({ tour }) => {
+  
+
   return (
     <section className="tour-details">
       <div className="tour-details__top">
@@ -31,24 +33,6 @@ const TourDetailsOne = ({ tour }) => {
                         <h6>{tour.duration} hours</h6>
                       </div>
                     </li>
-                    {/* <li>
-                      <div className="icon">
-                        <span className="icon-user"></span>
-                      </div>
-                      <div className="text">
-                        <p>Min Age</p>
-                        <h6>{minAge}</h6>
-                      </div>
-                    </li> */}
-                    {/* <li>
-                      <div className="icon">
-                        <span className="icon-plane"></span>
-                      </div>
-                      <div className="text">
-                        <p>Tour Type</p>
-                        <h6>{tourType}</h6>
-                      </div>
-                    </li> */}
                     <li>
                       <div className="icon">
                         <span className="icon-place"></span>

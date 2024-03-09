@@ -1,39 +1,41 @@
-import React from "react";
-import TourDetailsOne from "./TourDetailsOne";
+import React, { useEffect, useState } from "react";
+import TourDetailsOne from "../../data/tour-folder/TourDetailsOne";
 import TourDetailsTwo from "../../components/TourDetails/TourDetailsTwo";
 import SiteFooter from "@/components/SiteFooter/SiteFooter";
 import Header from "@/components/Header/Header";
-import MainSliderTwo from "./MainSliderTwo";
-import popularToursTwo from './../../data/popularToursTwo'; // Import the data from popularToursTwo.js
+import MainSliderTwo from "../../data/tour-folder/MainSliderTwo";
+import popularToursTwo from '../../data/popularToursTwo'; // Import the data from popularToursTwo.js
 
+const LinkPage = ({ tourLink }) => {
+  const [tour, setTour] = useState(null);
 
-const TourDetailsPage = ({ link }) => {
+  useEffect(() => {
+    const tourData = popularToursTwo.popularTours.find(tour => tour.link === tourLink);
+    setTour(tourData);
+  }, [tourLink]);
 
-  const tourData = popularToursTwo.popularTours.find(tour => tour.link === link);
-
-  console.log(tourData)
-  console.log(link)
+  if (!tour) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-     <main className="page-wrapper">
-        <Header pageTitle={'Home One'} />
-          <MainSliderTwo tour={tourData}/>
-          <TourDetailsOne tour={tourData}/>
-          <TourDetailsTwo tour={tourData}/>
-        <SiteFooter />
-      </main>
+      <Header pageTitle={'Home One'} />
+      <MainSliderTwo tour={tour}  />
+      <TourDetailsOne tour={tour} />
+      <TourDetailsTwo tour={tour} />
+      <SiteFooter />
     </>
   );
 };
 
 export async function getServerSideProps({ params }) {
-  const link = params?.link || null; // Set tourSlug to null if params.tourSlug is undefined
+  const tourLink = params?.link || null; // Get the tour link from dynamic route params
   return {
     props: {
-      link
+      tourLink
     }
   };
 }
 
-export default TourDetailsPage;
+export default LinkPage;

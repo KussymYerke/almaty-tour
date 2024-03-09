@@ -25,25 +25,26 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="UTF-8" />
           <link
-            rel="mountains"
+            rel="apple-touch-icon"
             sizes="180x180"
-            href="mountains.png"
+            href="apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="mountains.png"
+            href="favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="mountains.png"
+            href="favicon-16x16.png"
           />
           <link rel="icon" href="favicon.ico" />
           <link rel="manifest" href="manifest.json" />
-          <meta name="description" content="Almaty inspiration tour | Welcome to our Trip and Tour Agency." />
+          <meta name="description" content="Almaty inspiration tour | Welcome to our Trip and Tour Agency.
+" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link

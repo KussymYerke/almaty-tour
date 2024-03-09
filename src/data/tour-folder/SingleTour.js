@@ -5,7 +5,7 @@ import { Image } from "react-bootstrap";
 const SingleTour = ({ tour = {}, userSelect = false }) => {
   
   const { image, title, meta, rate, superb, link } = tour;
-
+  
   return (
     <div>
       <div

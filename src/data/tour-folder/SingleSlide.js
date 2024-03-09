@@ -14,6 +14,7 @@ const SingleSlide = ({ slide = {}, tour}) => {
         className="image-layer"
         style={{
           backgroundImage: `url(${bg1.src})`,
+          overflow: 'hidden',
         }}
       ></div>
       <Container>

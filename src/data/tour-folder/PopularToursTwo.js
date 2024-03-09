@@ -3,7 +3,7 @@ import groupTours from "@/data/popularToursTwo";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import SingleTour from "./SingleTour";
-import GroupTour from "../../components/GroupTour/GroupTour";
+import GroupTour from "@/components/GroupTour/GroupTour";
 
 const { tagline, title, popularTours } = popularToursTwo;
 
@@ -28,7 +28,7 @@ const PopularToursTwo = ({ toursPage = false }) => {
               md={6}
               className="animated fadeInUp"
             >
-              <SingleTour tour={tour} userSelect />
+              <SingleTour tour={tour}   userSelect />
             </Col>
           ))}
 

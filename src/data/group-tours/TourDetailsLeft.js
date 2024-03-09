@@ -1,4 +1,4 @@
-import SingleTour from "src/pages/tours/SingleTour";
+import SingleTour from "@/data/tour-folder/SingleTour";
 import { tourDetailsLeft } from "@/data/tourDetailsPage";
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";

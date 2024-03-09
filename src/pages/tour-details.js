@@ -6,8 +6,9 @@ import React from "react";
 const TourDetails = () => {
   return (
     <Layout pageTitle="Tours Details">
-      <MainSliderTwo />
-      <TourDetailsPage />
+      <div>tours</div>
+      {/* <MainSliderTwo />
+      <TourDetailsPage /> */}
     </Layout>
   );
 };

@@ -7,14 +7,6 @@ const mainSliderTwoData = [
     id: 1,
     bg: bg1,
   },
-  {
-    id: 2,
-    bg: bg2,
-  },
-  {
-    id: 3,
-    bg: bg3,
-  },
 ];
 
 export default mainSliderTwoData;

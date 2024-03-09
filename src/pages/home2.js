@@ -5,7 +5,7 @@ import BrandTwo from "@/components/BrandTwo/BrandTwo";
 import CounterOne from "@/components/CounterOne/CounterOne";
 import DestinationsTwo from "@/components/DestinationsTwo/DestinationsTwo";
 import Layout from "@/components/Layout/Layout";
-import PopularToursTwo from "src/pages/tours/PopularToursTwo";
+import PopularToursTwo from "@/data/tour-folder/PopularToursTwo";
 import SingaporeTour from "@/components/SingaporeTour/SingaporeTour";
 import ThreeIconBox from "@/components/ThreeIconBox/ThreeIconBox";
 import TourTypes from "@/components/TourTypes/TourTypes";
