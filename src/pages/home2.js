@@ -5,7 +5,6 @@ import BrandTwo from "@/components/BrandTwo/BrandTwo";
 import CounterOne from "@/components/CounterOne/CounterOne";
 import DestinationsTwo from "@/components/DestinationsTwo/DestinationsTwo";
 import Layout from "@/components/Layout/Layout";
-import NewsTwo from "@/components/NewsTwo/NewsTwo";
 import PopularToursTwo from "src/pages/tours/PopularToursTwo";
 import SingaporeTour from "@/components/SingaporeTour/SingaporeTour";
 import ThreeIconBox from "@/components/ThreeIconBox/ThreeIconBox";
@@ -26,7 +25,7 @@ const Home2 = () => {
       <AboutTwo />
       <TourTypes />
       <BrandTwo />
-      <NewsTwo />
+      {/* <NewsTwo /> */}
       <BookNow />
     </Layout>
   );

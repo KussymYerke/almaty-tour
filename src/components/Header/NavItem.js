@@ -11,7 +11,7 @@ const NavItem = ({ navItem = {} }) => {
 
   return (
     <li>
-      <Link href={href}>
+      <Link href={href} passHref>
         <div>{name}</div>
       </Link>
       {/* <ul>

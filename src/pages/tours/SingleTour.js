@@ -31,7 +31,7 @@ const SingleTour = ({ tour = {}, userSelect = false }) => {
           <ul className="popular-tours__meta list-unstyled">
             {meta.map((item, index) => (
               <li key={index}>
-                <Link href="/tour-details">{item}</Link>
+                <Link href={`/tours/${link}`}>{item}</Link>
               </li>
             ))}
           </ul>

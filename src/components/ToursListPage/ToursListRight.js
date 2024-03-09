@@ -18,7 +18,7 @@ const ToursListRight = () => {
                   alt=""
                 />
                 <div className="tours-list__icon">
-                  <Link href="/tour-details">
+                  <Link href="/tour-details" passHref>
                       <i className="fa fa-heart"></i>
                   </Link>
                 </div>
@@ -36,7 +36,7 @@ const ToursListRight = () => {
                 <p className="tours-list__text">{text}</p>
                 <ul className="tours-list__meta list-unstyled">
                   <li>
-                    <Link href="/tour-details">
+                    <Link href="/tour-details" passHref>
                         <div>
                           <i className="far fa-calendar"></i>
                           {date}
@@ -44,7 +44,7 @@ const ToursListRight = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/tour-details">
+                    <Link href="/tour-details" passHref>
                         <div>
                           <i className="far fa-user-circle"></i>
                           {user}
@@ -52,7 +52,7 @@ const ToursListRight = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/tour-details">
+                    <Link href="/tour-details" passHref>
                         <div>
                           <i className="far fa-map"></i>
                           {map}

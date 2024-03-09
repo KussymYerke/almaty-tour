@@ -29,10 +29,10 @@ const GroupTour = ({ tour = {}, userSelect = false }) => {
           </p>
           <ul className="popular-tours__meta list-unstyled">
             <li>
-                <Link href="/tour-details">12 HOURS</Link>
+                <Link href="group-tour">12 HOURS</Link>
             </li>
             <li>
-                <Link href="/tour-details">ALMATY REGION</Link>
+                <Link href="group-tour">ALMATY REGION</Link>
             </li>
           </ul>
         </div>

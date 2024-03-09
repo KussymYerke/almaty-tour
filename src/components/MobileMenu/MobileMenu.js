@@ -29,14 +29,14 @@ const MobileMenu = () => {
         </span>
 
         <div className="logo-box">
-          <Link href="/">
+          <Link href="/" passHref>
               <Image src={logo.src} width={155} alt="" />
           </Link>
         </div>
         <div className="mobile-nav__container">
           <ul className="main-menu__list">
             {navItems.map(({ id, ...item }) => (
-              <NavItem key={id} item={item} />
+              <NavItem key={id} item={item} passHref/>
             ))}
           </ul>
         </div>

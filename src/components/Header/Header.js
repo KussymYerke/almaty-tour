@@ -76,7 +76,7 @@ const Header = ({ pageTitle }) => {
             <div className="main-menu-wrapper-inner clearfix">
               <div className="main-menu-wrapper__left clearfix">
                 <div className="main-menu-wrapper__logo">
-                  <Link href="/">
+                  <Link href="/" passHref>
                       <Image
                         width={169}
                         src={pageTitle === "Home Two" ? logo2.src : logo.src}
@@ -93,7 +93,7 @@ const Header = ({ pageTitle }) => {
                   </span>
                   <ul className="main-menu__list">
                     {navItems.map((navItem) => (
-                      <NavItem key={navItem.id} navItem={navItem} />
+                      <NavItem key={navItem.id} navItem={navItem} passHref/>
                     ))}
                   </ul>
                 </div>

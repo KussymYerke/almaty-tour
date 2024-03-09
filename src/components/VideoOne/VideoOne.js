@@ -1,4 +1,5 @@
 import videoOne from "@/data/videoOne";
+import Link from "next/link"
 import dynamic from "next/dynamic";
 import React, { Fragment, useState } from "react";
 import { Col, Container, Row} from "react-bootstrap";
@@ -28,9 +29,9 @@ const VideoOne = () => {
                 <h2 className="video-one__title">{title}</h2>
               </div>
               <div className="btn-gap ">
-                <a href="/about" className="about-one__btn thm-btn btn-pad">
+                <Link href="/about" className="about-one__btn thm-btn btn-pad">
                   CONTACT US
-                </a>
+                </Link>
                 <a href="#form" className="about-one__btn sub-btn">
                   FILL THE FORM
                 </a>
