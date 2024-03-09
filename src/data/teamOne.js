@@ -8,7 +8,7 @@ const teamOne = {
     {
       id: 1,
       image: "team-1-1.jpg",
-      name: "Jessica Brown",
+      name: "Kairat Nurtas",
       title: "consultant",
       socials: [
         { id: 1, icon: "fab fa-facebook", href: "#" },
@@ -19,7 +19,7 @@ const teamOne = {
     {
       id: 2,
       image: "team-1-2.jpg",
-      name: "Mike Hardson",
+      name: "Malika Malikova",
       title: "consultant",
       socials: [
         { id: 1, icon: "fab fa-facebook", href: "#" },
@@ -30,7 +30,7 @@ const teamOne = {
     {
       id: 3,
       image: "team-1-3.jpg",
-      name: "Sarah Albert",
+      name: "Kairat Nurtas",
       title: "consultant",
       socials: [
         { id: 1, icon: "fab fa-facebook", href: "#" },
@@ -41,7 +41,7 @@ const teamOne = {
     {
       id: 4,
       image: "team-1-4.jpg",
-      name: "Kevin Smith",
+      name: "Kairat Nurtas",
       title: "consultant",
       socials: [
         { id: 1, icon: "fab fa-facebook", href: "#" },
