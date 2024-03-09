@@ -6,15 +6,15 @@ const NavItem = ({ navItem = {} }) => {
   const { pathname } = useRouter();
 
   const { name, href, subNavItems } = navItem;
-  const subHref = subNavItems.map((item) => item.href);
-  const current = pathname === href || subHref.includes(pathname);
+  // const subHref = subNavItems.map((item) => item.href);
+  // const current = pathname === href || subHref.includes(pathname);
 
   return (
-    <li className={`dropdown${current ? " current" : ""}`}>
+    <li>
       <Link href={href}>
         <div>{name}</div>
       </Link>
-      <ul>
+      {/* <ul>
         {subNavItems.map((subItem) => (
           <li
             className={subItem.subItems?.length ? "dropdown" : ""}
@@ -34,7 +34,7 @@ const NavItem = ({ navItem = {} }) => {
             </ul>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </li>
   );
 };

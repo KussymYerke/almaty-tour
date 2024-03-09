@@ -1,10 +1,8 @@
-import bg from "@/images/backgrounds/video-one-bg.jpg";
+import bg from "@/images/backgrounds/video-one-bg.png";
 
 const videoOne = {
   bg,
-  videoId: "Get7rqXYrbQ",
-  tagline: "Are you ready to travel?",
-  title: "Tevily is a World Leading Online Tour Booking Platform",
+  title: "For unforgettable experience in Kazakhstan, Almaty contact us",
   iconBoxes: [
     { id: 1, icon: "icon-deer", title: "Wildlife \n Tours" },
     { id: 2, icon: "icon-paragliding", title: "Paragliding \n Tours" },

@@ -2,7 +2,7 @@ import popularTours from "@/data/popularTours";
 import dynamic from "next/dynamic";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import SingleTour from "./SingleTour";
+import SingleTour from "../../pages/tours/SingleTour";
 
 const TinySlider = dynamic(() => import("tiny-slider-react"), { ssr: false });
 

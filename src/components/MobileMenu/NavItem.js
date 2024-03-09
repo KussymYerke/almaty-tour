@@ -18,20 +18,10 @@ const NavItem = ({ item = {} }) => {
 
   return (
     <li className={`dropdown${pathname === href ? " current" : ""}`}>
-      <Link href={href}>
-        {/* <a className={expand ? " expanded" : ""}>
+      <Link className={expand ? " expanded" : ""} href={href}>
           {name}
-          <button
-            onClick={handleExpand}
-            aria-label="dropdown toggler"
-            className={expand ? "expanded" : ""}
-          >
-            <i className="fa fa-angle-down"></i>
-          </button>
-        </a> */}
-        ASD
       </Link>
-      <ul
+      {/* <ul
         style={{
           display: expand ? "block" : "none",
         }}
@@ -39,7 +29,7 @@ const NavItem = ({ item = {} }) => {
         {subNavItems.map((subItem) => (
           <SubNavItem subItem={subItem} key={subItem.id} />
         ))}
-      </ul>
+      </ul> */}
     </li>
   );
 };

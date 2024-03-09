@@ -1,7 +1,9 @@
 import aboutPage from "@/data/aboutPage";
+import counterOne from "@/data/counterOne";
 import React, { useState } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
-import VisibilitySensor from "react-visibility-sensor";
+import VisibilityCountUp from "../VisibilityCountUp/VisibilityCountUp";
+
 
 const { image, tagline, title, text1, text2, progress } = aboutPage;
 
@@ -31,9 +33,23 @@ const AboutPage = () => {
                 <span className="section-title__tagline">{tagline}</span>
                 <h2 className="section-title__title">{title}</h2>
               </div>
-              <p className="about-page__text-1">{text1}</p>
+              {/* <p className="about-page__text-1">{text1}</p> */}
               <p className="about-page__text-2">{text2}</p>
-              <div className="about-page__progress">
+              <div className="counter-one">
+                <div className="counter-one__container">
+                  <ul className="list-unstyled counters-one__box">
+                    {counterOne.map(({ id, text, count }) => (
+                      <li key={id} className="counter-one__single animated fadeInUp">
+                        <h3 className="odometer">
+                          <VisibilityCountUp count={count} /> +
+                        </h3>
+                        <p className="counter-one__text">{text}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              {/* <div className="about-page__progress">
                 {progress.map(({ id, title, count }) => (
                   <div className="about-page__progress-single" key={id}>
                     <h4 className="about-page__progress-title">{title}</h4>
@@ -55,7 +71,7 @@ const AboutPage = () => {
                     </VisibilitySensor>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </Col>
         </Row>

@@ -1,12 +1,17 @@
 import galleryOne from "@/data/galleryOne";
-import React from "react";
 import SingleGallery from "./SingleGallery";
+
+
+
+
 
 const { bg, galleryData } = galleryOne;
 
 const GalleryOne = () => {
+
   return (
-    <section className="gallery-one">
+    <div>
+      <section className="gallery-one">
       <div
         className="gallery-one-bg"
         style={{ backgroundImage: ` url(${bg.src})` }}
@@ -19,6 +24,7 @@ const GalleryOne = () => {
         </ul>
       </div>
     </section>
+    </div>
   );
 };
 

@@ -3,11 +3,11 @@ import bg from "@/images/shapes/gallery-map.png";
 const galleryOne = {
   bg,
   galleryData: [
-    "gallery-one-img-1.jpg",
-    "gallery-one-img-2.jpg",
-    "gallery-one-img-3.jpg",
-    "gallery-one-img-4.jpg",
-    "gallery-one-img-5.jpg",
+    "gallery-one-img-1.png",
+    "gallery-one-img-2.png",
+    "gallery-one-img-3.png",
+    "gallery-one-img-4.png",
+    "gallery-one-img-5.png",
   ],
 };
 

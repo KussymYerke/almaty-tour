@@ -4,31 +4,31 @@ import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import SingleTestimonial from "./SingleTestimonial";
 
-const TinySlider = dynamic(() => import("tiny-slider-react"), { ssr: false });
+// const TinySlider = dynamic(() => import("tiny-slider-react"), { ssr: false });
 
-const settings = {
-  lazyload: true,
-  nav: true,
-  navPosition: "bottom",
-  mouseDrag: true,
-  items: 1,
-  autoplay: true,
-  autoHeight: true,
-  controls: false,
-  gutter: 0,
-  autoplayButton: false,
-  autoplayButtonOutput: false,
-  responsive: {
-    768: {
-      items: 2,
-      gutter: 30,
-    },
-    1200: {
-      items: 3,
-      gutter: 30,
-    },
-  },
-};
+// const settings = {
+//   lazyload: true,
+//   nav: true,
+//   navPosition: "bottom",
+//   mouseDrag: true,
+//   items: 1,
+//   autoplay: true,
+//   autoHeight: true,
+//   controls: false,
+//   gutter: 0,
+//   autoplayButton: false,
+//   autoplayButtonOutput: false,
+//   responsive: {
+//     768: {
+//       items: 2,
+//       gutter: 30,
+//     },
+//     1200: {
+//       items: 3,
+//       gutter: 30,
+//     },
+//   },
+// };
 
 const { shape1, shape2, tagline, title, testimonials, bg } = testimonialOne;
 
@@ -62,14 +62,12 @@ const TestimonialOne = ({ aboutPage = false }) => {
         <Row>
           <Col xl={12}>
             <div className="testimonial-one__carousel">
-              <TinySlider settings={settings}>
                 {testimonials.map((testimonial) => (
                   <SingleTestimonial
                     key={testimonial.id}
                     testimonial={testimonial}
                   />
                 ))}
-              </TinySlider>
             </div>
           </Col>
         </Row>

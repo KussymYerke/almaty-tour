@@ -7,7 +7,7 @@ const SingleGallery = ({ image = "" }) => {
       <div className="gallery-one__img-box">
         <Image src={require(`@/images/gallery/${image}`).default.src} alt="" />
         <div className="gallery-one__iocn">
-          <a href={`@/images/gallery/${image}`}>
+          <a href={`https://www.instagram.com/almatyinspirationtour/`}>
             <i className="fab fa-instagram"></i>
           </a>
         </div>

@@ -75,39 +75,6 @@ const testimonialOne = {
         role: "Customer",
       },
     },
-    {
-      id: 7,
-      image: "testimonial-one-img-1.png",
-      review: 5,
-      description:
-        "This is due to their best service, pricing and customer support. It’s throughly refresing to such a personal touch. Duis aute irure lupsum reprehenderit.",
-      client: {
-        name: "Shirley Smith",
-        role: "Customer",
-      },
-    },
-    {
-      id: 8,
-      image: "testimonial-one-img-2.png",
-      review: 5,
-      description:
-        "This is due to their best service, pricing and customer support. It’s throughly refresing to such a personal touch. Duis aute irure lupsum reprehenderit.",
-      client: {
-        name: "Kevin Martin",
-        role: "Customer",
-      },
-    },
-    {
-      id: 9,
-      image: "testimonial-one-img-3.png",
-      review: 5,
-      description:
-        "This is due to their best service, pricing and customer support. It’s throughly refresing to such a personal touch. Duis aute irure lupsum reprehenderit.",
-      client: {
-        name: "Jessica Brown",
-        role: "Customer",
-      },
-    },
   ],
 };
 

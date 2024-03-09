@@ -18,7 +18,7 @@ const Header = ({ pageTitle }) => {
         pageTitle === "Home Two" ? " main-header-two" : ""
       } clearfix`}
     >
-      <div className="main-header__top">
+      {/* <div className="main-header__top">
         <Container>
           <div className="main-header__top-inner clearfix">
             <div className="main-header__top-left">
@@ -53,7 +53,7 @@ const Header = ({ pageTitle }) => {
             </div>
           </div>
         </Container>
-      </div>
+      </div> */}
       <nav
         className={
           scrollTop
@@ -78,6 +78,7 @@ const Header = ({ pageTitle }) => {
                 <div className="main-menu-wrapper__logo">
                   <Link href="/">
                       <Image
+                        width={169}
                         src={pageTitle === "Home Two" ? logo2.src : logo.src}
                         alt=""
                       />
@@ -96,14 +97,6 @@ const Header = ({ pageTitle }) => {
                     ))}
                   </ul>
                 </div>
-              </div>
-              <div className="main-menu-wrapper__right">
-                <span
-                  onClick={toggleSearch}
-                  style={{ cursor: "pointer" }}
-                  className="main-menu__search search-toggler icon-magnifying-glass"
-                ></span>
-                <a href="#" className="main-menu__user icon-avatar"></a>
               </div>
             </div>
           </Container>

@@ -2,6 +2,7 @@ import AboutPage from "@/components/AboutPage/AboutPage";
 import BookNow from "@/components/BookNow/BookNow";
 import BrandTwo from "@/components/BrandTwo/BrandTwo";
 import CounterOne from "@/components/CounterOne/CounterOne";
+import Form from "@/components/Form/Form";
 import Layout from "@/components/Layout/Layout";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import TeamOne from "@/components/TeamOne/TeamOne";
@@ -14,12 +15,13 @@ const About = () => {
     <Layout pageTitle="About">
       <PageHeader title="About" outerPage="Pages" />
       <AboutPage />
-      <BookNow />
-      <TestimonialOne aboutPage />
-      <VideoTwo />
+      {/* <BookNow /> */}
+      {/* <TestimonialOne aboutPage /> */}
+      {/* <VideoTwo /> */}
       <CounterOne />
       <TeamOne />
-      <BrandTwo brandThree />
+      <Form/>
+      {/* <BrandTwo brandThree /> */}
     </Layout>
   );
 };

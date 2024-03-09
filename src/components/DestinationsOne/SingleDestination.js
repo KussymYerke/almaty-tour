@@ -3,7 +3,7 @@ import React from "react";
 import { Col, Image } from "react-bootstrap";
 
 const SingleDestination = ({ destination = {} }) => {
-  const { image, title, tours, subTitle, col } = destination;
+  const { image, title, tours, subTitle, col, link } = destination;
 
   return (
     <Col xl={col} lg={col}>
@@ -18,11 +18,9 @@ const SingleDestination = ({ destination = {} }) => {
               <p className="destinations-one__sub-title">{subTitle}</p>
             )}
             <h2 className="destinations-one__title">
-              <Link href="/destinations-details">{title}</Link>
+              <Link href={`/tours/${link}`}>{title}</Link>
+              {/* <Link href="/tour-details">{title}</Link> */}
             </h2>
-          </div>
-          <div className="destinations-one__button">
-            <a href="#">{tours} tours</a>
           </div>
         </div>
       </div>

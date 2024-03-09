@@ -40,24 +40,6 @@ const MobileMenu = () => {
             ))}
           </ul>
         </div>
-
-        <ul className="mobile-nav__contact list-unstyled">
-          <li>
-            <i className="fa fa-envelope"></i>
-            <a href="mailto:needhelp@packageName__.com">needhelp@tevily.com</a>
-          </li>
-          <li>
-            <i className="fa fa-phone-alt"></i>
-            <a href="tel:666-888-0000">666 888 0000</a>
-          </li>
-        </ul>
-        <div className="mobile-nav__top">
-          <div className="mobile-nav__social">
-            {social.map(({ icon, link }, index) => (
-              <a href={link} key={index} className={`fab ${icon}`}></a>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );

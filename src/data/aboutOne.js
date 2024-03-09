@@ -9,13 +9,13 @@ const aboutOne = {
   phone: "666-888-0000",
   discount: "30%",
   tagline: "Get to know us",
-  title: "Plan Your Trip with Trevily",
+  title: "Plan Your Trip with us",
   destination:
     "There are many variations of passages of available but the majority have suffered alteration in some form, by injected hum randomised words which don't look even slightly.",
   points: [
-    "Invest in your simply neighborhood",
-    "Support people in free text extreme need",
-    "Largest global industrial business community",
+    "Individual tour for any quantity of people",
+    "English speaking guides",
+    "Comfortable transport",
   ],
 };
 
