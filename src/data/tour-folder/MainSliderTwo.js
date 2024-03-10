@@ -21,13 +21,13 @@ const mainSlideOptions = {
 };
 
 const MainSliderTwo = ({tour}) => {
+
+
   return (
     <section className="main-slider tour-details-slider" style={{overflowY: 'hidden'}}>
       <Swiper className="thm-swiper__slider" {...mainSlideOptions}>
         <div className="swiper-wrapper">
-          {mainSliderTwoData.map((slide) => (
-            <SingleSlide key={slide.id} slide={slide} tour={tour} />
-          ))}
+            <SingleSlide tour={tour} />
         </div>
       </Swiper>
     </section>

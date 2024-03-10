@@ -29,9 +29,7 @@ const MainSliderTwo = () => {
     <section className="main-slider tour-details-slider">
       <Swiper className="thm-swiper__slider" {...mainSlideOptions}>
         <div className="swiper-wrapper">
-          {mainSliderTwoData.map((slide) => (
-            <SingleSlide key={slide.id} slide={slide} groupTours={groupTours} />
-          ))}
+            <SingleSlide groupTours={groupTours} />
         </div>
       </Swiper>
     </section>
